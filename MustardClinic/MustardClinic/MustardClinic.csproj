@@ -170,6 +170,18 @@
     <Compile Include="ViewModels\AccountViewModels.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Customer.mdf" />
+    <Content Include="App_Data\Customer_log.ldf">
+      <DependentUpon>Customer.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\Doctor.mdf" />
+    <Content Include="App_Data\Doctor_log.ldf">
+      <DependentUpon>Doctor.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\Narcotic.mdf" />
+    <Content Include="App_Data\Narcotic_log.ldf">
+      <DependentUpon>Narcotic.mdf</DependentUpon>
+    </Content>
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.css" />
@@ -192,9 +204,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
