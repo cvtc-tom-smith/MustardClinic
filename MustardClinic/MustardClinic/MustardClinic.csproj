@@ -170,10 +170,6 @@
     <Compile Include="ViewModels\AccountViewModels.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Customer.mdf" />
-    <Content Include="App_Data\Customer_log.ldf">
-      <DependentUpon>Customer.mdf</DependentUpon>
-    </Content>
     <Content Include="App_Data\Doctor.mdf" />
     <Content Include="App_Data\Doctor_log.ldf">
       <DependentUpon>Doctor.mdf</DependentUpon>
