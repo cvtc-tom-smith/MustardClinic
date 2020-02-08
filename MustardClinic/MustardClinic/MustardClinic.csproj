@@ -170,6 +170,8 @@
     <Compile Include="ViewModels\AccountViewModels.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\AppointmentIcon.png" />
+    <Content Include="images\ClinicExterior.jpg" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.css" />
@@ -178,6 +180,10 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="images\DoctorFade.jpg" />
+    <Content Include="images\DoctorPatient.jpg" />
+    <Content Include="images\FindDrIcon.png" />
+    <Content Include="images\RxRefillIcon.png" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="Web.config" />
