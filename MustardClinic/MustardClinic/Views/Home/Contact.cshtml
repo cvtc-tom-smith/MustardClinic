@@ -1,0 +1,94 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container marketing">
+
+    <hr class="featurette-divider">
+</div>
+
+    <!DOCTYPE html>
+    <html id="contact">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #contact {
+                box-sizing: border-box;
+            }
+
+            input[type=text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+
+            input[type=submit] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+                input[type=submit]:hover {
+                    background-color: #45a049;
+                }
+
+            .contact {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="container marketing">
+            <h3>Contact Form</h3>
+            <div class="contact">
+                <form action="/action_page.php">
+                    <label for="userName">Name</label>
+                    <input type="text" id="userName" name="userName" placeholder="Your name..">
+
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email..">
+
+
+                    <label for="department">Department</label>
+                    <select id="department" name="department">
+                        <option value="patient">Patient Info</option>
+                        <option value="scheduling">Scheduling</option>
+                        <option value="billing">Billing and Insurance</option>
+                        <option value="medical">Medical Staff</option>
+                    </select>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+            
+            <hr class="featurette-divider">
+
+            <footer style=" text-align: left;">
+                <p>&copy; 2020 Mustard Clinic</p>
+            </footer>
+
+        </div>
+    </body>
+</html>
+
