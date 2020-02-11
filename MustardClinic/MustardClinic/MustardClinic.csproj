@@ -170,14 +170,6 @@
     <Compile Include="ViewModels\AccountViewModels.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Doctor.mdf" />
-    <Content Include="App_Data\Doctor_log.ldf">
-      <DependentUpon>Doctor.mdf</DependentUpon>
-    </Content>
-    <Content Include="App_Data\Narcotic.mdf" />
-    <Content Include="App_Data\Narcotic_log.ldf">
-      <DependentUpon>Narcotic.mdf</DependentUpon>
-    </Content>
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.css" />
@@ -186,6 +178,10 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="images\DoctorFade.jpg" />
+    <Content Include="images\DoctorPatient.jpg" />
+    <Content Include="images\FindDrIcon.png" />
+    <Content Include="images\RxRefillIcon.png" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="Web.config" />
@@ -213,6 +209,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\About.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Contact.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

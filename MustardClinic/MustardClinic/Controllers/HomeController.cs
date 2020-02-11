@@ -10,8 +10,25 @@ namespace MustardClinic.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title="My Bootstrap Site";
-return View();
+            ViewBag.Title="Mustard Clinic";
+            return View();
         }
+
+        public ActionResult About()
+        {
+            ViewBag.Message = "About...";
+
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            ViewBag.Message = "Contact...";
+
+            return View();
+        }
+
+
     }
+
 }
