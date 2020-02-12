@@ -180,8 +180,11 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="images\DoctorCollage.jpg" />
     <Content Include="images\DoctorFade.jpg" />
     <Content Include="images\DoctorPatient.jpg" />
+    <Content Include="images\DoctorStethoscope.jpg" />
+    <Content Include="images\DoctorValue.jpg" />
     <Content Include="images\FindDrIcon.png" />
     <Content Include="images\RxRefillIcon.png" />
     <Content Include="js\bootstrap.js" />
