@@ -173,6 +173,15 @@
     <Compile Include="ViewModels\AccountViewModels.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Doctor.mdf" />
+    <Content Include="App_Data\Doctor_log.ldf">
+      <DependentUpon>Doctor.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\Narcotic.mdf" />
+    <Content Include="App_Data\Narcotic_log.ldf">
+      <DependentUpon>Narcotic.mdf</DependentUpon>
+    </Content>
+    <Content Include="bin\Newtonsoft.Json.dll" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.css" />
@@ -205,7 +214,9 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
@@ -232,9 +243,7 @@
     <Content Include="obj\Debug\MustardClinic.csprojAssemblyReference.cache" />
     <Content Include="obj\Release\MustardClinic.csproj.CoreCompileInputs.cache" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="obj\Debug\TempPE\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
