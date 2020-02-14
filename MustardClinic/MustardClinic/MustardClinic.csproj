@@ -197,12 +197,21 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="images\Dane-Menkin-CRNP.png" />
     <Content Include="images\DoctorCollage.jpg" />
     <Content Include="images\DoctorFade.jpg" />
     <Content Include="images\DoctorPatient.jpg" />
     <Content Include="images\DoctorStethoscope.jpg" />
     <Content Include="images\DoctorValue.jpg" />
+    <Content Include="images\Dr-Alicia-Grossmann-MD.png" />
+    <Content Include="images\Dr-Leigh-Ann-Wade-MD.png" />
+    <Content Include="images\Dr-Mahyar-Eidgah-MD.png" />
+    <Content Include="images\Dr-Norman-Chan-MD.png" />
+    <Content Include="images\Dr-Shelly-Hall-MD.png" />
+    <Content Include="images\Dr-Zachary-Wassmuth-MD.png" />
+    <Content Include="images\Efrat-LaMandre-FNP.png" />
     <Content Include="images\FindDrIcon.png" />
+    <Content Include="images\Koudiratou-Radji-NP.png" />
     <Content Include="images\RxRefillIcon.png" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
@@ -251,7 +260,9 @@
     <Content Include="obj\Debug\MustardClinic.csprojAssemblyReference.cache" />
     <Content Include="obj\Release\MustardClinic.csproj.CoreCompileInputs.cache" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Views\Home\Providers.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
