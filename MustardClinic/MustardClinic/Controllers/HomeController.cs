@@ -28,6 +28,12 @@ namespace MustardClinic.Controllers
             return View();
         }
 
+        public ActionResult Providers()
+        {
+            ViewBag.Message = "Providers...";
+
+            return View();
+        }
 
     }
 
