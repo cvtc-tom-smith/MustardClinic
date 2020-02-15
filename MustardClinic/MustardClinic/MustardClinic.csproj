@@ -219,6 +219,7 @@
     <Content Include="obj\Debug\MustardClinic.dll" />
     <Content Include="obj\Debug\MustardClinic.pdb" />
     <Content Include="Register.aspx" />
+    <Content Include="images\ClinicSide.jpeg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
