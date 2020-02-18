@@ -213,6 +213,7 @@
     <Content Include="images\FindDrIcon.png" />
     <Content Include="images\Koudiratou-Radji-NP.png" />
     <Content Include="images\RxRefillIcon.png" />
+    <Content Include="images\Seal.png" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="obj\Debug\MustardClinic.csproj.FileListAbsolute.txt" />
@@ -263,6 +264,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Providers.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Accreditation.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
