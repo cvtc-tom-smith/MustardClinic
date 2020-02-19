@@ -195,6 +195,10 @@
     <Content Include="App_Data\Narcotic_log.ldf">
       <DependentUpon>Narcotic.mdf</DependentUpon>
     </Content>
+    <Content Include="App_Data\WebFormsIdentity.mdf" />
+    <Content Include="App_Data\WebFormsIdentity_log.ldf">
+      <DependentUpon>WebFormsIdentity.mdf</DependentUpon>
+    </Content>
     <Content Include="bin\Newtonsoft.Json.dll" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
