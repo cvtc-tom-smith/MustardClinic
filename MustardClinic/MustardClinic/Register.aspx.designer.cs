@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MustardClinic {
+namespace WebFormsIdentity {
     
     
     public partial class Register {
