@@ -189,13 +189,10 @@
     <Content Include="App_Data\Narcotic_log.ldf">
       <DependentUpon>Narcotic.mdf</DependentUpon>
     </Content>
-<<<<<<< HEAD
-=======
     <Content Include="App_Data\Patient.mdf" />
     <Content Include="App_Data\Patient_log.ldf">
       <DependentUpon>Patient.mdf</DependentUpon>
     </Content>
->>>>>>> 4dd2c85cda3cc1346499a99b4f7e9ed47fd2a2ae
     <Content Include="App_Data\WebFormsIdentity.mdf" />
     <Content Include="App_Data\WebFormsIdentity_log.ldf">
       <DependentUpon>WebFormsIdentity.mdf</DependentUpon>
