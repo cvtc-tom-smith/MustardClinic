@@ -35,6 +35,13 @@ namespace MustardClinic.Controllers
             return View();
         }
 
+        public ActionResult Accreditation()
+        {
+            ViewBag.Message = "Accreditation...";
+
+            return View();
+        }
+
     }
 
 }
