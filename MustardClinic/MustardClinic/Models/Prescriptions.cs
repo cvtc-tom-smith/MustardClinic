@@ -8,7 +8,10 @@ namespace MustardClinic.Models
 {
     public class Prescriptions
     {
-        
+        [Key]
+        public int DrugID { get; set; }
+        public string DrugName { get; set; }
+        public string DrugDose { get; set; }
 
     }
 }

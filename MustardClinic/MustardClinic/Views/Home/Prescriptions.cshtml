@@ -13,20 +13,14 @@
 <section class="column-middle">
 
     <p class="hide">
-        @Html.DisplayNameFor(model => model.ImageName)
-        @Html.DisplayNameFor(model => model.Title)
-        @Html.DisplayNameFor(model => model.Description)
-        @Html.DisplayNameFor(model => model.Genre)
-        @Html.DisplayNameFor(model => model.PublishedDate)
+        @Html.DisplayNameFor(model => model.DrugName)
+        @Html.DisplayNameFor(model => model.DrugDose)
     </p>
 
 @foreach (var item in Model)
 {
-    <img src="~/Content/@Html.DisplayFor(modelItem => item.ImageName)" /><br />
-    <p>@Html.DisplayFor(modelItem => item.Title)</p><br />
-    <p>@Html.DisplayFor(modelItem => item.Description)</p><br />
-    <p>@Html.DisplayFor(modelItem => item.Genre)</p><br />
-    <p>@Html.DisplayFor(modelItem => item.PublishedDate)</p><br />
+    <img src="~/Content/@Html.DisplayFor(modelItem => item.DrugName)" /><br />
+    <p>@Html.DisplayFor(modelItem => item.DrugDose)</p><br />
 
 }
 
