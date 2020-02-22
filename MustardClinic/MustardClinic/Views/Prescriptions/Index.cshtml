@@ -17,12 +17,12 @@
         @Html.DisplayNameFor(model => model.DrugDose)
     </p>
 
-@foreach (var item in Model)
-{
-    <img src="~/Content/@Html.DisplayFor(modelItem => item.DrugName)" /><br />
-    <p>@Html.DisplayFor(modelItem => item.DrugDose)</p><br />
+    @foreach (var item in Model)
+    {
+        <img src="~/Content/@Html.DisplayFor(modelItem => item.DrugName)" /><br />
+        <p>@Html.DisplayFor(modelItem => item.DrugDose)</p><br />
 
-}
+    }
 
 </section>
 

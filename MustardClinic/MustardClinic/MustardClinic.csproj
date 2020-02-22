@@ -284,10 +284,10 @@
     <Content Include="Views\Home\Accreditation.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Prescriptions.cshtml" />
+    <Content Include="Views\Home\Appointments.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Appointments.cshtml" />
+    <Content Include="Views\Prescriptions\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
