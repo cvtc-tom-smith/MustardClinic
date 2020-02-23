@@ -49,12 +49,6 @@ namespace MustardClinic.Controllers
             return View();
         }
 
-        public ActionResult Prescriptions()
-        {
-            ViewBag.Message = "Prescriptions...";
-
-            return View();
-        }
     }
 
 }
