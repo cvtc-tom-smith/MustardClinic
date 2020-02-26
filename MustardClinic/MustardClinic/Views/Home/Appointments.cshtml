@@ -2,4 +2,31 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <section class="column-left">
+        <h3>How can we help?</h3><br />
+        <span>
+            Please take the time to fill out the information required
+            on the right.
+        </span>
+    </section>
 
+    <section id="contact" class="column-middle">
+        <h3>Contact Us!</h3><br />
+        <asp:Label ID="lblName" runat="server" Text="Enter your Name: "></asp:Label>
+        @Html.TextBox("StudentName", null, new { @class = "form-control" })
+        <asp:RequiredFieldValidator ID="rfvName" runat="server" ErrorMessage="Please enter in a Name." ControlToValidate="txtName"></asp:RequiredFieldValidator>
+
+    </section>
+
+    <section class="column-right">
+        <asp:Panel ID="pnlSubmission" runat="server" Visible="False">
+            <h3>Thank you for your submission!</h3>
+            <span>
+                You should be hearing back from someone in hopefully 24 hours to conferm your appointment.
+                This is for business days only, excluding holidays.
+            </span>
+        </asp:Panel>
+    </section>
+
+</asp:Content>
