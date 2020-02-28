@@ -13,7 +13,7 @@
             <div class="container">
                 <div class="carousel-caption">
                     <h1 style="text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8, 1px 1px 17px #0A0403;">Mustard Clinic</h1>
-                   <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                   <p><a class="btn btn-lg btn-primary"role="button"onclick="@("location.href='"+ Url.Action("Register","Account")+ "'")">Sign up today</a></p>
                 </div>
             </div>
         </div>
@@ -22,7 +22,6 @@
             <div class="container">
                 <div class="carousel-caption">
                     <h1 style="text-shadow: 0px 1px 7px rgba(10,4,3,0.99);">Care that lasts a lifetime</h1>
-                   <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
                 </div>
             </div>
         </div>
@@ -32,7 +31,6 @@
                 <div class="carousel-caption">
                     <h1 style="text-shadow: 0px 1px 7px rgba(10,4,3,0.99);">
                     Mustard Clinic is committed to providing the best care to every patient</h1>
-                   <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
                 </div>
             </div>
         </div>
@@ -51,17 +49,17 @@
         <div class="col-lg-4">
             <img class="img-circle" src="~/images/FindDrIcon.png" alt="Generic placeholder image">
             <h2>Find a Doctor</h2>
-             <p><a id="btnDr"class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+             <p><a id="btnDr"class="btn btn-default" role="button"onclick="@("location.href='"+ Url.Action("Providers","Home")+ "'")">View details&raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
             <img class="img-circle" src="~/images/AppointmentIcon.png" alt="Generic placeholder image">
             <h2>Appointments</h2>
-           <p><a id="btnAppt" class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+           <p><a id="btnAppt" class="btn btn-default" role="button"onclick="@("location.href='"+ Url.Action("Appointments","Home")+ "'")">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
             <img class="img-circle" src="~/images/RxRefillIcon.png" alt="Generic placeholder image">
             <h2>Prescriptions</h2>
-            <p><a id="btnRx"class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <p><a id="btnRx"class="btn btn-default" role="button"onclick="@("location.href='"+ Url.Action("Index","Prescriptions")+ "'")">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
     <!-- START THE FEATURETTES -->
