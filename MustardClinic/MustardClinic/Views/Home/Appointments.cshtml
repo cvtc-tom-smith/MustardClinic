@@ -7,17 +7,31 @@
 
     <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <section class="column-left">
-            <h3>How can we help?</h3><br />
+            <h3>Need to make an appointment?<br /> Fill out the information below!</h3><br />
+            <h2>Patient Information</h2>
             <span>
-                Please take the time to fill out the information required
-                on the right.
+                Please provide patient information as it appears on legal documents.
             </span>
         </section>
 
         <section id="contact" class="column-middle">
-            <h3>Contact Us!</h3><br />
-            <asp:Label ID="lblName" runat="server" Text="Enter your Name: "></asp:Label>
-            @Html.TextBox("StudentName", null, new { @class = "form-control" })
+            <br />
+            <span>
+                Legal first name:
+            </span>
+            @Html.TextBox("FirstName", null, new { @class = "form-control" })
+            <asp:RequiredFieldValidator ID="rfvName" runat="server" ErrorMessage="Please enter in a Name." ControlToValidate="txtName"></asp:RequiredFieldValidator>
+
+            <span>
+                Legal middle name (optional):
+            </span>
+            @Html.TextBox("MiddleName", null, new { @class = "form-control" })
+            <asp:RequiredFieldValidator ID="rfvName" runat="server" ErrorMessage="Please enter in a Name." ControlToValidate="txtName"></asp:RequiredFieldValidator>
+
+            <span>
+                Legal last name:
+            </span>
+            @Html.TextBox("LastName", null, new { @class = "form-control" })
             <asp:RequiredFieldValidator ID="rfvName" runat="server" ErrorMessage="Please enter in a Name." ControlToValidate="txtName"></asp:RequiredFieldValidator>
 
         </section>
