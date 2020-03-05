@@ -1,18 +1,19 @@
-﻿using MustardClinic.Context;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using MustardClinic.Context;
 using MustardClinic.Models;
-using System.Net;
-using System.Data.Entity;
 
 namespace MustardClinic.Controllers
 {
     public class PrescriptionsController : Controller
     {
-        private PrescriptionsDBContext db = new PrescriptionsDBContext();
+        private Context.PrescriptionsDBContext db = new PrescriptionsDBContext();
 
         // GET: Prescriptions
         public ActionResult Index()

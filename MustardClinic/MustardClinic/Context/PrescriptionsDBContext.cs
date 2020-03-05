@@ -10,7 +10,7 @@ namespace MustardClinic.Context
 {
     public class PrescriptionsDBContext : DbContext
     {
-        public Pharmaceutical() : base("Pharmaceutical")
+        public PrescriptionsDBContext() : base("Perscriptions")
         {
         }
         public DbSet<Prescriptions> Prescriptions { get; set; }
