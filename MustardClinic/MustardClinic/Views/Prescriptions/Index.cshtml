@@ -5,35 +5,49 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.DrugName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DrugDose)
-        </th>
-        <th></th>
-    </tr>
+<div class="container marketing">
 
-    @foreach (var item in Model)
-    {
+    <hr class="featurette-divider">
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.DrugName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DrugDose)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.DrugID }) |
-                @Html.ActionLink("Details", "Details", new { id = item.DrugID }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.DrugID })
-            </td>
+            <th>
+                @Html.DisplayNameFor(model => model.DrugName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DrugDose)
+            </th>
+            <th></th>
         </tr>
-    }
 
-</table>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DrugName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DrugDose)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.DrugID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.DrugID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.DrugID })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+    </asp:Content>
+    <hr class="featurette-divider">
+    <footer>
+        <p class="pull-right"></p>
+        <p>&copy; 2020 Mustard Clinic</p>
+    </footer>
+</div>
+
+
