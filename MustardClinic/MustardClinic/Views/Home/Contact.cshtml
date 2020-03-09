@@ -31,7 +31,7 @@
                 resize: vertical;
             }
 
-            input[type=submit] {
+            .btnContact {
                 background-color: #4CAF50;
                 color: white;
                 padding: 12px 20px;
@@ -40,7 +40,7 @@
                 cursor: pointer;
             }
 
-                input[type=submit]:hover {
+               .btnContact:hover {
                     background-color: #45a049;
                 }
 
@@ -56,7 +56,7 @@
         <div class="container marketing">
             <h3>Contact Form</h3>
             <div class="contact">
-                <form action="/action_page.php">
+                <form action="/action_page.php" id="myForm">
                     <label for="userName">Name</label>
                     <input type="text" id="userName" name="userName" placeholder="Your name..">
 
@@ -77,16 +77,26 @@
 
                     <label for="message">Message</label>
                     <textarea id="message" name="message" placeholder="Your message.." style="height:200px"></textarea>
-
-                    <input type="submit" value="Send">
+                    <p><a id="btn" class="btnContact" role="button" onclick="myFunction()">Send&raquo;</a></p><br />
                 </form>
+                    
+                <p id="sent"></p>
+                    <script>
+                        function myFunction() {
+                            document.getElementById("sent").innerHTML = "Your message has been sent.";
+                            document.getElementById("myForm").reset();
+                        }
+                    </script>
+                
             </div>
-            
+
             <hr class="featurette-divider">
 
-            <footer style=" text-align: left;">
+            <footer>
+                <p class="pull-right"><a>@Html.ActionLink("Back Home", "Index", "Home")</a></p>
                 <p>&copy; 2020 Mustard Clinic</p>
             </footer>
+
 
         </div>
     </body>

@@ -1,0 +1,35 @@
+﻿@model MustardClinic.Models.Narcotic
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Narcotic</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DrugName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DrugName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DrugDose)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DrugDose)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DrugID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

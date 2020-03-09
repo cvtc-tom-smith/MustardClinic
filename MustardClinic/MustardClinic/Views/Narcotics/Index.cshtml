@@ -1,0 +1,51 @@
+﻿@model IEnumerable<MustardClinic.Models.Narcotic>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container marketing">
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.DrugName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DrugDose)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DrugName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DrugDose)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.DrugID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.DrugID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.DrugID })
+                    </td>
+                </tr>
+            }
+
+        </table>
+
+    </div>
+
+    <hr class="featurette-divider">
+
+    <footer style="text-align:left;">
+        <p>&copy; 2020 Mustard Clinic</p>
+    </footer>
+</div>
