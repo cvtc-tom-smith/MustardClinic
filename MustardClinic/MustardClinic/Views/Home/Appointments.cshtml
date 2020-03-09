@@ -84,10 +84,10 @@
 
         </section><br />
 
-        <input type="submit" value="Submit" class="btn btn-default" />
+        <input type="submit" value="Submit" class="btn btn-default" onclick="pnlSubmission.hidden = false" />
 
         <section class="column-right">
-            <asp:Panel ID="pnlSubmission" runat="server" Visible="False">
+            <asp:Panel ID="pnlSubmission" runat="server" hidden="true">
                 <h3>Thank you for your submission!</h3>
                 <span>
                     You should be hearing back from someone within 24 hours to confirm your appointment.
