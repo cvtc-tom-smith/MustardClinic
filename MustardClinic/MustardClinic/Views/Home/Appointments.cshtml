@@ -15,76 +15,46 @@
         </section>
 
         <section id="contact" class="column-middle">
-            <br />
-            <span>
-                Legal first name:
-            </span>
-            @Html.TextBox("FirstName", null, new { @class = "form-control" })
-            <asp:RequiredFieldValidator ID="rfvName" runat="server" ErrorMessage="Please enter in a Name." ControlToValidate="txtName"></asp:RequiredFieldValidator>
+            <form action="/action_page.php" id="resetForm">
+                <br />
+                <label for="firstname">Legal First Name:</label><br />
+                <input type="text" id="firstName" name="firstName" placeholder="Your first name.."><br /><br />
 
-            <span>
-                Legal middle name (optional):
-            </span>
-            @Html.TextBox("MiddleName", null, new { @class = "form-control" })
-            <asp:RequiredFieldValidator ID="rfvName" runat="server" ErrorMessage="Please enter in a Name." ControlToValidate="txtName"></asp:RequiredFieldValidator>
+                <label for="middlename">Legal Middle Name(optional):</label><br />
+                <input type="text" id="middleName" name="middleName" placeholder="Your middle name.."><br /><br />
 
-            <span>
-                Legal last name:
-            </span>
-            @Html.TextBox("LastName", null, new { @class = "form-control" })
-            <asp:RequiredFieldValidator ID="rfvName" runat="server" ErrorMessage="Please enter in a Name." ControlToValidate="txtName"></asp:RequiredFieldValidator>
+                <label for="lastname">Legal last name:</label><br />
+                <input type="text" id="lastName" name="lastName" placeholder="Your last name.."><br /><br />
 
+                <label for="address">Address:</label><br />
+                <input type="text" id="address" name="address" placeholder="Your address.."><br /><br />
+
+                <label for="city">City:</label><br />
+                <input type="text" id="city" name="city" placeholder="Your city.."><br /><br />
+
+                <label for="State">State:</label><br />
+                <input type="text" id="state" name="state" placeholder="Your State.."><br /><br />
+
+                <label for="zip">ZIP:</label><br />
+                <input type="text" id="zip" name="zip" placeholder="Your ZIP.."><br /><br />
+
+                <label for="phone">Preferred phone:</label><br />
+                <input type="text" id="phone" name="phone" placeholder="Your Phone.."><br /><br />
+
+                <label for="phone">What is the primary medical problem or diagnosis for the appointment request?</label><br />
+                <input type="text" id="problem" name="problem" placeholder="Your primary medical problem or diagnosis.."><br />
+            </form>
         </section>
+        <br />
 
-        <span>
-            Address:
-        </span>
-        @Html.TextBox("Address", null, new { @class = "form-control" })
-        <asp:RequiredFieldValidator ID="rfvName" runat="server" ErrorMessage="Please enter in a Name." ControlToValidate="txtName"></asp:RequiredFieldValidator>
+        <input type="submit" value="Submit" class="btn btn-default" onclick=submitFunction() />
 
-        <section>
-
-        <span>
-            City:
-        </span>
-        @Html.TextBox("City", null, new { @class = "form-control" })
-        <asp:RequiredFieldValidator ID="rfvName" runat="server" ErrorMessage="Please enter in a Name." ControlToValidate="txtName"></asp:RequiredFieldValidator>
-
-        </section>
-
-        <span>
-            State:
-        </span>
-        @Html.TextBox("State", null, new { @class = "form-control" })
-        <asp:RequiredFieldValidator ID="rfvName" runat="server" ErrorMessage="Please enter in a Name." ControlToValidate="txtName"></asp:RequiredFieldValidator>
-
-        <section>
-
-        <span>
-            ZIP:
-        </span>
-        @Html.TextBox("ZIP", null, new { @class = "form-control" })
-        <asp:RequiredFieldValidator ID="rfvName" runat="server" ErrorMessage="Please enter in a Name." ControlToValidate="txtName"></asp:RequiredFieldValidator>
-
-        </section>
-
-        <span>
-            Preferred phone:
-        </span>
-        @Html.TextBox("Phone", null, new { @class = "form-control" })
-        <asp:RequiredFieldValidator ID="rfvName" runat="server" ErrorMessage="Please enter in a Name." ControlToValidate="txtName"></asp:RequiredFieldValidator>
-
-        <section>
-
-        <span>
-            What is the primary medical problem or diagnosis for the appointment request?
-        </span>
-        @Html.TextBox("Problem", null, new { @class = "form-control" })
-        <asp:RequiredFieldValidator ID="rfvName" runat="server" ErrorMessage="Please enter in a Name." ControlToValidate="txtName"></asp:RequiredFieldValidator>
-
-        </section><br />
-
-        <input type="submit" value="Submit" class="btn btn-default" onclick="pnlSubmission.hidden = false" />
+        <script>
+            function submitFunction() {
+                document.getElementById("pnlSubmission").hidden = false;
+                document.getElementById("resetForm").reset();
+            }
+        </script>
 
         <section class="column-right">
             <asp:Panel ID="pnlSubmission" runat="server" hidden="true">
