@@ -24,19 +24,19 @@
 
             @foreach (var item in Model)
             {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.DrugName)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.DrugDose)
-                    </td>
-                    <td>
-                        @Html.ActionLink("Edit", "Edit", new { id = item.DrugID }) |
-                        @Html.ActionLink("Details", "Details", new { id = item.DrugID }) |
-                        @Html.ActionLink("Delete", "Delete", new { id = item.DrugID })
-                    </td>
-                </tr>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DrugName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DrugDose)
+                </td>
+                <!--<td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.DrugID }) |
+        @Html.ActionLink("Details", "Details", new { id = item.DrugID }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.DrugID })
+    </td>-->
+            </tr>
             }
 
         </table>
